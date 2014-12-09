@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+	This document provides the basis of a semantically structured web page 
+	authored in XHTML 1.0 Transitional using established Cornell University
+	naming conventions.
+-->
+
+<head>
+	<title>Cornell University - Sam Posen - Resum&eacute</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+<!--
+	All layout and formatting should be controlled through Cascading Stylesheets (CSS).
+	The following link tag should appear in the head of every page in the website. see
+	styles/screen.css.
+-->
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/screen.css" />
+</head>
+
+<body class="onecolumn">
+
+<!--
+	The following link provides a way for people using text-based browsers and
+	screen readers to skip over repetitive navigation elements so that they can 
+	get directly to the content. It is hidden from general users through CSS.
+-->
+<div id="skipnav">
+	<a href="#content">Skip to main content</a>
+</div>
+
+<hr />
+
+<!-- The following div contains the Cornell University logo with unit signature -->
+<SCRIPT LANGUAGE="JavaScript" SRC="./scripts/cuid.js"></SCRIPT>
+
+<!-- The header div contains the main identity and main navigation for the site -->
+<div id="header">	
+	<!--
+		The navigation div contains the site's main navigation. These
+		links will be displayed in a horizontal, gray navigation bar 
+		under the unit signature banner.
+	-->	
+	<SCRIPT LANGUAGE="JavaScript" SRC="./scripts/nav.js"></SCRIPT>
+	
+	<hr />
+	
+	<!-- 
+		The identity div contains the name of a main site section
+	-->
+	<div id="identity">
+		<h1>Portfolio</h1>
+	</div>
+</div>
+
+<hr />
+
+<div id="wrap">
+
+<!-- The content div contains the main content of the page -->
+<div id="content">
+	<div id="main">
+
+<!-- <p><h2>
+This page is under construction
+</h2></p>-->
+
+<p>
+This page contains details of some of the projects that I've worked on. You can scroll through or navigate to individual projects using the links here:
+ <!--This page has things on it. For the lower thing, click <a href="portfolio.html#foo">here</a>.-->
+</p><ul>
+<li>
+<a href="#cavitytest">Cavity Testing</a>
+</li><li>
+<a href="#ansys">ANSYS Simulation and Cryomodule Design</a>   
+</li><li>
+<a href="#Tmap">Designing and Building a T-map System</a>
+</li><li>
+<a href="#slowcool">Designing and Building a Slow Cool System</a>
+</li><li>
+<a href="#Tc">Designing and Building a Tc System</a>
+</li><li>
+<a href="#nb3sncoating">Designing and Building a Nb3Sn Coating System</a>
+</li><li>
+<a href="#nb3sncommissioning">Commissioning Nb3Sn Coating System</a>
+</li><li>
+<a href="#nb3snresults">Nb3Sn Cavity Results</a>
+</li><li>
+<a href="#homs">HOM Measurements and Cryomodule Assembly</a>
+</li><li>
+<a href="#llrf">Cryomodule Testing and LLRF</a>
+</li><li>
+<a href="#theory">Superconductivity Theory</a>
+</li><li>
+<a href="#scpi">Instrument Communication and Process Automation</a>
+</li><li>
+<a href="#microwave">Microwave Equipment</a>
+</li><li>
+<a href="#undergrad">Undergraduate Projects</a>                                        
+			</li>
+		</ul>
+
+<div id="cavitytest"></div>
+  <h2>Cavity Testing</h2>
+<p align="justify">
+In my time at Cornell, I've performed dozens of vertical tests of SRF cavities. This involves preparing a cavity in the clean room, cooling it to ~2 K, and then evaluating the performance of the cavity, primarily by measuring the quality factor (which determines how much power the cavity would dissipate in a helium bath) as a function of accelerating field. We use a phase-locked loop to drive the cavity at its resonant frequency, as when it is superconducting, its bandwidth drops to as low as ~0.01 Hz. In order to run experiments independently, I learned to operate the cryogenic system myself (helium transfers, recovery, pumping, and temperature control above 4.2 K) and have done so for the majority of my tests. I also dress the cavity with diagnostic instruments before testing, like temperature sensors, helium level sticks, oscillating superleak transducers, fluxgate magnetometers, as well as heaters and power cables, and I make sure everything works. Finally, during the test, I am responsible for the measurements and data acquisition.
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/cavityassembly_thumb.jpg"><img class="thumbnail" src="images/Portfolio/cavityassembly_thumb.jpg" alt="Working in the clean room" title="Working in the clean room"  height="200"/></a></td>
+<td><a href="images/Portfolio/crane2.jpg"><img class="thumbnail" src="images/Portfolio/crane2_thumb.jpg" alt="Removing a cold insert" title="Removing a cold insert"  height="200"/></a></td>
+<!--<td><a href="images/Portfolio/inpit2.jpg"><img class="thumbnail" src="images/Portfolio/inpit2.jpg" alt="Test pit instrumentation" title="Test pit instrumentation" height="200"/></a></td>
+</tr>
+</table></div>
+<div><table class="image">
+<tr> -->
+<td><a href="images/Portfolio/transfer3.png"><img class="thumbnail" src="images/Portfolio/transfer3_thumb.png" alt="Transferring liquid helium" title="Transferring liquid helium" height="200"/></a></td>
+</tr>
+</table></div>
+</p><p>
+Related publications: <a href="http://accelconf.web.cern.ch/accelconf/SRF2011/papers/thpo009.pdf">SRF11</a>  
+</p>
+
+<div id="ansys"></div>   
+  <h2>ANSYS Simulation and Cryomodule Design</h2>
+<p align="justify">
+Over my Ph.D. studies, I've become highly skilled with the engineering simulation software ANSYS. It is a very useful environment for predicting, for example, the stress in a component when a load is applied or the temperature distribution in a cavity with thermal intercepts and RF heat loads. In the latter case, one can estimate the heat load to each intercept and make sure that the heat sinking of RF pickup antennas is sufficient. The hard part for me was learning how to integrate structural simulations with RF simulations. By transferring data from the modern ANSYS Workbench to ANSYS Classic (this transfer is key to achieving good meshes with CAD-built models), I can predict df/dp and Lorentz force detuning for a cavity. My ANSYS simulations were used to plan cuts to relieve thermal expansion stress in the Cornell ERL injector HOM absorber tiles and to optimize the Cornell ERL main linac cavity assembly. With the main linac cavity, I performed a detailed study of the effects of stiffening ring placement, tuner choice, and assembly stiffness. 
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/HOMtiles.png"><img class="thumbnail" src="images/Portfolio/HOMtiles.png" alt="ERL injector HOM tiles" title="ERL injector HOM tiles"  height="100"/></a></td>
+<td><a href="images/Portfolio/ANSYScavity3.png"><img class="thumbnail" src="images/Portfolio/ANSYScavity3.png" alt="Minimizing microphonic sensitivity in the ERL main linac cavity" title="Minimizing microphonic sensitivity in the ERL main linac cavity" height="100"/></a></td>
+<td><a href="images/Portfolio/ANSYScavity2.png"><img class="thumbnail" src="images/Portfolio/ANSYScavity2_thumb.png" alt="Minimizing microphonic sensitivity in the ERL main linac cavity" title="Minimizing microphonic sensitivity in the ERL main linac cavity" height="100"/></a></td>
+<td><a href="images/Portfolio/ANSYScavity4.png"><img class="thumbnail" src="images/Portfolio/ANSYScavity4.png" alt="Minimizing microphonic sensitivity in the ERL main linac cavity" title="Minimizing microphonic sensitivity in the ERL main linac cavity" height="100"/></a></td>
+</tr>
+</table></div>
+</p><p>
+Related publications: <a href="http://www.lepp.cornell.edu/~sep93/docs/ANSYS_HOM10.pdf">Talk at HOM10</a>, <a href="http://link.aps.org/doi/10.1103/PhysRevSTAB.15.022002" target="_blank">publication in Phys Rev: ST-AB</a>, <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc080.pdf" target="_blank">IPAC12</a>, SRF11 <a href="http://accelconf.web.cern.ch/accelconf/SRF2011/papers/mopo019.pdf">(1)</a> <a href="http://accelconf.web.cern.ch/accelconf/SRF2011/papers/mopo016.pdf">(2)</a>, <a href="http://accelconf.web.cern.ch/AccelConf/IPAC10/papers/wepec065.pdf">IPAC10</a>   
+</p>
+    
+<div id="Tmap"></div>  
+  <h2>Designing and Building a T-map System</h2>
+<p align="justify">
+In 2011, we decided that there was need for a temperature mapping system (T-map) for R&D cavities. A T-map consists of an array of hundreds of temperature sensors arranged over the surface of the cavity so that the distribution of heating can be localized to about 1 cm^2. This valuable information is used to diagnose performance limiting mechanisms. For example, in the case of a localized defect, after testing, the optical inspection telescope can be used in the region of maximum heating to locate the defect and conclusively link it to poor RF performance.
+</p><p align="justify">
+An obsolete T-map existed already, which had been used to test a cavity shape that is no longer in use. It could not be used to test cavities with standard TeSLA or Cornell ERL shapes. However, we were able to recover from it hundreds of Allen Bradley carbon resistors used as RTDs, which are pressed against the cavity surface with "pogo sticks." We were also able to reuse the multiplexing data acquisition boxes and connecting cables.  
+</p><p align="justify">
+Working with the drafting department and the electronics shop, I designed printed circuit boards to properly hold the temperature sensors against the cavity and connect to the resistance-measuring circuit, as well as aluminum plates to hold the boards securely against the cavity. We hired a Cornell undergraduate, who I trained to solder the resistors to the boards and test the connections. Finally, I wrote a MATLAB program to interface with the multiplexers, calibrate and read out the T-map, and plot temperature rises over the surface of the cavity. The T-map has since become a workhorse of Cornell's R&D program.  
+   
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/defect.jpg"><img class="thumbnail" src="images/Portfolio/defect.jpg" alt="A pit observed under optical inspection" title="A pit observed under optical inspection"  height="110"/></a></td>
+<td><a href="images/Portfolio/board.jpg"><img class="thumbnail" src="images/Portfolio/board.jpg" alt="T-map boards new and after soldering" title="T-map boards new and after soldering" height="110"/></a></td>
+<td><a href="images/Portfolio/tmaponcav.jpg"><img class="thumbnail" src="images/Portfolio/tmaponcav_thumb.jpg" alt="T-map on cavity" title="T-map on cavity" height="110"/></a></td>
+<td><a href="images/Portfolio/residualHQ.jpg"><img class="thumbnail" src="images/Portfolio/residualHQ.jpg" alt="T-map output" title="T-map plot" height="110"/></a></td>
+</tr>
+</table></div>
+</p><p>
+Related publications: IPAC12 <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc079.pdf" target="_blank">(1)</a> <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc071.pdf" target="_blank">(2)</a>  
+</p>
+    
+<div id="slowcool"></div>  
+  <h2>Designing and Building a Slow Cool System</h2>
+<p align="justify">
+In the literature, previous experimenters have reported poor performances in Nb3Sn cavities that were cooled below their critical temperatures in the standard, fast way. They found that if they cooled their cavities very slowly, at ~10 K/hour, they could avoid Q-degradation that they attributed to thermocurrents between the Nb and Nb3Sn layers. I knew that by the time I produced a cavity, I would need to have made an apparatus to cool down the cavity extremely slowly and uniformly, so that I could be confident that any poor performance was not caused by this thermocurrent effect. I thought of several systems, such as a series of heaters over the surface of the cavity, a heater below the insert that would boil the liquid helium as it entered, or a bladder to isolate the cavity from the flow of cold helium. I decided that the only way to make sure that I could uniformly cool down the cavity in a controlled way was to admit helium gas with a chosen temperature to the dewar, so that the temperature could fall roughly isothermally. With this idea, I designed and built a system that would throttle liquid helium flow to a manageable level, then boil it and warm it using several stages of heaters.
+The system as designed exceeded its performance goal, providing a wide range of cooling rates even below 10 K/hour. The tool I developed has been essential for my Nb3Sn cavity tests. It has also been very important for tests run by fellow grad student Dan Gonella, in which he measures the effect of cooldown rate on nitrogen-doped cavities in the presence of external magnetic fields.      
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/slowcoolCAD.png"><img class="thumbnail" src="images/Portfolio/slowcoolCAD.png" alt="CAD model" title="CAD model"  height="125"/></a></td>
+<td><a href="images/Portfolio/slowcoolopen2.jpg"><img class="thumbnail" src="images/Portfolio/slowcoolopen2.jpg" alt="Partially assembled" title="Partially assembled" height="125"/></a></td>
+<td><a href="images/Portfolio/slowcoolHPP.jpg"><img class="thumbnail" src="images/Portfolio/slowcoolHPP.jpg" alt="Slow cool system on test stand" title="Slow cool system on test stand"  height="125"/></a></td>
+<td><a href="images/Portfolio/slowcoolDec2012.png"><img class="thumbnail" src="images/Portfolio/slowcoolDec2012.png" alt="Very slow, very uniform cool through Tc=18 K" title="Very slow, very uniform cool through Tc=18 K" height="125"/></a></td>
+</tr>
+</table></div>
+</p>
+    
+<div id="Tc"></div> 
+  <h2>Designing and Building a Tc System</h2>
+<p align="justify">
+We needed a criterion for evaluating the first samples produced by the Nb3Sn program so that I could optimize the parameters used in the coating process. Critical temperature is a good indicator of coating quality which can be measured much more easily and quickly than RF performance, but there was no Tc measurement apparatus in the lab. Designing and building such an apparatus seemed like an excellent project for summer students, and my advisor was starting a summer program for local community college students. In summer 2011, I was the mentor for Justin Riley, a community college student who designed a Tc measurement apparatus using CAD. The parts for the apparatus were fabricated in the machine shop that year, and then I mentored a second student, Chris Wilson, in summer 2012, who assembled the system and used it to test my first Nb3Sn samples. It worked very well, measuring clear signals with high resolution. It is now also being used by other researchers studying alternative materials, recently proving that nitrogen-doped samples showed the Tc of Nb, not NbN as had been spectulated.  
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/Tc1.png"><img class="thumbnail" src="images/Portfolio/Tc1.png" alt="CAD drawing of sample holder" title="CAD drawing of sample holder" height="125"/></a></td>
+<td><a href="images/Portfolio/tcpic.jpg"><img class="thumbnail" src="images/Portfolio/tcpic.jpg" alt="Assembled Tc insert" title="Assembled Tc insert" height="125"/></a></td>
+<td><a href="images/Portfolio/justin.jpg"><img class="thumbnail" src="images/Portfolio/justin.jpg" alt="SRCCS student Justin making CAD drawings" title="SRCCS student Justin Riley making CAD drawings"  height="125"/></a></td>
+<td><a href="images/Portfolio/chris.jpg"><img class="thumbnail" src="images/Portfolio/chris.jpg" alt="SRCCS student Chris Wilson making electrical connections" title="SRCCS student Chris Wilson making electrical connections" height="125"/></a></td>
+</tr>
+</table></div>
+</p><p>
+Related publications: <a href="http://ipnweb.in2p3.fr/srf2013/papers/tup058.pdf" target="_blank">Poster and paper at SRF13</a> 
+</p>
+
+    
+<div id="nb3sncoating"></div>
+  <h2>Designing and Building a Nb3Sn Coating System</h2>
+<p align="justify">
+When I arrived at Cornell as a summer intern before starting graduate studies, my advisor already had the idea and the funding to develop Nb3Sn vapor deposition coating at Cornell, but there was no detailed plan. I studied the literature, reading many papers from Wuppertal and Siemens about Nb3Sn-coated cavities. Soon we had an idea of what our coating system should look like, and a way to implement in Cornell's UHV furnace with high likelihood of success. Once the design was finalized, I managed the assembly with the help of a community college student that I was mentoring. I selected and ordered products from vendors, oversaw production of parts in the machine shop, and cleaned and assembled the insert.
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/FIsampCADxsection.png"><img class="thumbnail" src="images/Portfolio/FIsampCADxsection.png" alt="Cross section of furnace insert CAD model" title="Cross section of furnace insert CAD model"  height="200"/></a></td>
+<td><a href="images/Portfolio/gantt2.png"><img class="thumbnail" src="images/Portfolio/gantt2.png" alt="Planning assembly" title="Planning assembly"  height="70"/></a>
+<br><br><a href="images/Portfolio/FIsamp1.jpg"><img class="thumbnail" src="images/Portfolio/FIsamp1_thumb.jpg" alt="Chamber welded and cleaned" title="Chamber welded and cleaned"  height="110"/></a></td>
+<td><a href="images/Portfolio/FIsampassembledv2.jpg"><img class="thumbnail" src="images/Portfolio/FIsampassembledv2_thumb.jpg" alt="Assembled insert" title="Assembled insert"  height="200"/></a></td>
+<td><a href="images/Portfolio/cleanbolt.jpg"><img class="thumbnail" src="images/Portfolio/cleanbolt_thumb.jpg" alt="Connecting the insert to the furnce" title="Connecting the insert to the furnce"  height="200"/></a></td>
+</tr>
+</table></div>
+</p><p>
+Related publications: <a href="http://www.lepp.cornell.edu/~sep93/docs/SamPosenThinFilms_final.pdf">Talk at SRF Thin Films 2010</a> 
+</p>
+       
+    
+<div id="nb3sncommissioning"></div>  
+  <h2>Commissioning Nb3Sn Coating System</h2>
+<p align="justify">
+The first samples I coated had excellent properties. Using the Tc system (described above), I measured Tc = 18.1 K, very close to the maximum literature value. Anodization of the samples showed a nice purple color, as expected for uniform coverage, even sides facing away from the tin source. SEM showed good grain structure similar to previous experimenters, and simultaneous EDX showed that over the area of the sample, there was a uniform Sn/Nb ratio close to the optimum part of the composition range. XPS showed a uniform composition down to 1-2 micrometers, which is very large compared to the penetration depth.
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/sampleanodiz.png"><img class="thumbnail" src="images/Portfolio/sampleanodiz2.png" alt="Purple color indicator of Nb3Sn" title="Purple color indicator of Nb3Sn" height="125"/></a></td>
+<td><a href="images/Portfolio/sampleSEM.png"><img class="thumbnail" src="images/Portfolio/sampleSEM.png" alt="SEM image of Nb3Sn surface" title="SEM image of Nb3Sn surface" height="125"/></a></td>
+<td><a href="images/Portfolio/sampleTC.png"><img class="thumbnail" src="images/Portfolio/sampleTC.png" alt="Tc measurement" title="Tc measurement"  height="125"/></a></td>
+<td><a href="images/Portfolio/sampleSNcontent.png"><img class="thumbnail" src="images/Portfolio/sampleSNcontent.png" alt="Sn content and Tc measurement agree with literature" title="Sn content and Tc measurement agree with literature" height="125"/></a></td>
+</tr>
+</table></div>
+</p><p>
+Related publications: Talks at <a href="http://www.lepp.cornell.edu/~liepe/webpage/docs/TTC_meeting_Posen.pdf">TTC 2011 (remote)</a> and <a href="http://www.lepp.cornell.edu/~sep93/docs/Posen_Nb3Sn_SRF11.pdf">SRF11 (award talk)</a>, and other conference proceedings at <a href="http://ipnweb.in2p3.fr/srf2013/html/auth0783.htm">SRF13</a>, <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc078.pdf" target="_blank">IPAC12</a>, <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2011/papers/mopc108.pdf">IPAC11</a>, <a href="http://accelconf.web.cern.ch/accelconf/SRF2011/papers/thpo066.pdf">SRF11</a>
+</p>
+    
+<div id="nb3snresults"></div> 
+  <h2>Nb3Sn Cavity Results</h2>
+<p align="justify">
+  By the time we had established that we could manufacture high quality coatings in a repeatable manner, I had begun the design and fabrication of a new apparatus that could coat full single cell 1.3 GHz cavities. The commissioning was challenging, with our first cavity suffering from what appeared to be problems with the niobium substrate. But my second Nb3Sn coated cavity had extremely encouraging RF performance. I showed that it was possible to produce cavities that did not show strong quality factor degradation with increasing field. That second cavity I produced appears to be the first particle accelerator cavity to strongly outperform niobium at useful temperatures and fields.
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/FIcavCR.png"><img class="thumbnail" src="images/Portfolio/FIcavCR_thumb.png" alt="New insert for full cavities" title="New insert for full cavities" height="125"/></a></td>
+<td><a href="images/Portfolio/coatedcavity.png"><img class="thumbnail" src="images/Portfolio/coatedcavity_thumb.png" alt="Coated cavity and inside surface appearance" title="Coated cavity and inside surface appearance"  height="125"/></a></td>
+<td><a href="images/Portfolio/Nb3SnResult.png"><img class="thumbnail" src="images/Portfolio/Nb3SnResult.png" alt="Encouraging RF results" title="Encouraging RF results" height="125"/></td>
+<td><a href="images/Portfolio/pulsedmeasurement.png"><img class="thumbnail" src="images/Portfolio/pulsedmeasurement.png" alt="High power pulsed measurement of quench field" title="High power pulsed measurement of quench field" height="125"/></a></td>
+</tr>
+</table></div> 
+</p><p>
+Related publications: Invited talks at LINAC14 and <a href="http://www.lepp.cornell.edu/~sep93/docs/PAC2013_SEP_BeyondNb_7.pdf">NA-PAC13</a>, contributed talks at <a href="http://www.lepp.cornell.edu/~sep93/docs/PAC2013_SEP_Nb3Sn8.pdf">NA-PAC13</a>, <a href="http://www.lepp.cornell.edu/~sep93/docs/LC2013_Posen_FINAL.pdf">LC2013</a>, and <a href="http://www.lepp.cornell.edu/~sep93/docs/TTC_2012_SEP_Nb3Sn_FINAL.pdf">TTC12</a>, and other conference proceedings at SRF13 <a href="http://ipnweb.in2p3.fr/srf2013/papers/weioa04.pdf" target="_blank">(1)</a> <a href="http://ipnweb.in2p3.fr/srf2013/papers/tup087.pdf" target="_blank">(2)</a>.  
+</p>
+
+
+<div id="homs"></div>    
+<h2>HOM Measurements and Cryomodule Assembly</h2>
+<p align="justify">
+Higher order modes (HOMs) are undesirable high frequency cavity RF resonances that can interact with the beam in harmful ways. They are especially strongly excited when the bunch length is short and the current is high, as they are in the Cornell ERL, which as a result requires extensive use of absorbing HOM loads. I performed measurements of HOMs in the prototype ERL injector cryomodule (ICM), to confirm that the HOM loads provided sufficient suppression over the wide spectrum of frequencies excited by the <1 mm bunches. I used a spectrum analyzer in the secure radiation area to record HOM power as a function of frequency while running as high current as possible through the ICM. No strong lines were observed up to 30 GHz, indicating excellent suppression of all monopole modes. The ICM was fully assembled when I came to Cornell, but I was fortunate to have the opportunity to participate in a cryomodule assembly when the first prototype Cornell ERL main linac 7-cell cavity was tested in the Horizontal Test Cryomodule (HTC). I helped make the key connections of the cavity to the string after high pressure rinsing, learning from the experienced researchers who were leading the assembly the extra precautions and procedures that are necessary for this kind of operation. 
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/HOMstring.png"><img class="thumbnail" src="images/Portfolio/HOMstring.png" alt="Cutaway view of ICM string section" title="Cutaway view of ICM string section"  height="125"/></a></td>
+<td><a href="images/Portfolio/HOMload.png"><img class="thumbnail" src="images/Portfolio/HOMload.png" alt="Cutaway view of HOM load" title="Cutaway view of HOM load"  height="125"/></a></td>
+<td><a href="images/Portfolio/HOMscan.png"><img class="thumbnail" src="images/Portfolio/HOMscan.png" alt="HOM Measurement at 50 MHz repitition rate" title="HOM Measurement at 50 MHz repitition rate"  height="125"/></a></td>
+<td><a href="images/Portfolio/cavitystring_thumb.jpg"><img class="thumbnail" src="images/Portfolio/cavitystring_thumb.jpg" alt="Cavity string assembly" title="Cavity string assembly"  height="125"/></a></td>
+</tr>
+</table></div> 
+</p><p>
+Related publications: <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc072.pdf" target="_blank">IPAC12</a> <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2011/papers/mooda01.pdf">IPAC11</a>, <a href="http://accelconf.web.cern.ch/accelconf/SRF2011/papers/mopo063.pdf">SRF11</a>, PAC11 <a href="http://accelconf.web.cern.ch/AccelConf/PAC2011/papers/tup063.pdf">(1)</a> <a href="http://accelconf.web.cern.ch/AccelConf/PAC2011/papers/frobs3.pdf">(2)</a>, IPAC10 <a href="http://www.lns.cornell.edu/~liepe/webpage/docs/TU303.pdf">(1)</a> <a href="http://accelconf.web.cern.ch/AccelConf/IPAC10/papers/wepec066.pdf">(2)</a> 
+</p>
+    
+        
+<div id="llrf"></div>    
+  <h2>Cryomodule Testing and LLRF</h2>
+<p align="justify">
+I have been deeply involved in testing of Cornell's Horizontal Test Cryomodule (HTC). When the cavity is interacting with a beam, it is driven at a frequency dependent on the bunch repetition rate. Rather than match the frequency of the drive power to the cavity resonance, we adjust the cavity frequency with a mechanical tuner to match the master oscillator. We use a control loop that varies the drive power to compensate for changes in the cavity frequency and in the beam current. Working with the digital low level RF (LLRF) system of the HTC, I performed detailed studies of amplifier gain control, as well as feedback and feedforward control of the piezos, small devices that quickly change the resonant frequency of the cavity by deforming it. I am fortunate to have had the opportunity to work on the LLRF system with my advisor, who is one of the top experts in the field. I also learned a lot about how to control and evaluate the performance of cavities in this arrangement, and what kinds of problems one can encounter. 
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/llrfboard.png"><img class="thumbnail" src="images/Portfolio/llrfboard.png" alt="Cornell digital LLRF board" title="Cornell digital LLRF board"  height="100"/></a></td>
+<td><a href="images/Portfolio/microphonics1.png"><img class="thumbnail" src="images/Portfolio/microphonics1.png" alt="HTC microphonics measurements" title="HTC microphonics measurements"  height="100"/></a></td>
+<td><a href="images/Portfolio/HTCfromCAD.png"><img class="thumbnail" src="images/Portfolio/HTCfromCAD.png" alt="Cornell HTC" title="Cornell HTC"  height="100"/></a></td>
+<td><a href="images/Portfolio/HTCcav.png"><img class="thumbnail" src="images/Portfolio/HTCcav.png" alt="HTC cavity mounted to cold mass" title="HTC cavity mounted to cold mass"  height="100"/></a></td>
+</tr>
+</table></div> 
+</p><p>
+Related publications: <a href="http://www.sciencedirect.com/science/article/pii/S0168900213009972" target="_blank">Nuc. Instr. Meth. in Phys. A</a>, SRF13 <a href="http://ipnweb.in2p3.fr/srf2013/papers/mop071.pdf" target="_blank">(1)</a> <a href="http://ipnweb.in2p3.fr/srf2013/papers/thiob02.pdf" target="_blank">(2)</a>, <a href="http://accelconf.web.cern.ch/AccelConf/PAC2013/papers/thpma07.pdf" target="_blank">NA-PAC13</a>, IPAC12 <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc081.pdf" target="_blank">(1)</a> <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc073.pdf" target="_blank">(2)</a> <a href="http://accelconf.web.cern.ch/AccelConf/IPAC2012/papers/weppc075.pdf" target="_blank">(3)</a>     
+</p>
+
+<div id="theory"></div>    
+  <h2>Superconductivity Theory</h2>
+<p align="justify">
+I have been collaborating with Cornell theorists to develop the current understanding of SIS multilayer films. It has been proposed that these sandwiches of thin film superconductors and insulators may allow alternative superconductors to operate at higher RF magnetic fields than they would be able to as an isolated bulk. We have shown that in fact for these structures the lower critical field Hc1 is 0, proving that just like bulk superconductors, they must rely on metastability to avoid flux penetration. We have also shown that for ideal superconductors, the maximum field that can be shielded by an SIS structure is similar to the maximum field that can be shielded by a bulk superconductor. Continuing our study, we hope to determine realistic performance expectations for these structures. In addition, I have applied the theoertical framework of the closing of the superconducting gap developed by Lin and Gurevich to calculate what kind of performance to expect if it were playing a strong role in SRF cavities.   
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/multilayerSetup2.png"><img class="thumbnail" src="images/Portfolio/multilayerSetup2.png" alt="Showing that Hc1=0 for the SIS structure" title="Showing that Hc1=0 for the SIS structure"  height="150"/></a></td>
+<td><a href="images/Portfolio/multilayersShielding.png"><img class="thumbnail" src="images/Portfolio/multilayersShielding.png" alt="Calculated shielding capability of ideal thin film sandwiches" title="Calculated shielding capability of ideal thin film sandwiches"  height="150"/></a></td>
+<td><a href="images/Portfolio/gapclosing.png"><img class="thumbnail" src="images/Portfolio/gapclosing.png" alt="Closing of the superconducting gap at high magnetic fields" title="Closing of the superconducting gap at high magnetic fields"  height="150"/></a></td>
+</tr>
+</table></div> 
+</p><p>
+Related publications: <a href="http://www.lepp.cornell.edu/~sep93/docs/SRF2013_SEP_ThinFilms7.pdf">Invited talk at SRF13</a>, <a href="http://www.lepp.cornell.edu/~sep93/docs/Posen_SRF_Materials_Workshop_2012.pdf">Contributed talk at SRF Materials Workshop 2012</a>, and other conference proceedings at <a href="http://accelconf.web.cern.ch/AccelConf/PAC2013/papers/wepac12.pdf" target="_blank">NA-PAC13</a>  
+</p>
+
+<div id="microwave"></div>   
+  <h2>Microwave Equipment</h2>
+<p align="justify">
+In the course of my graduate research, to operate our cavities at frequencies in the 0.5 - 6 GHz range, I've had to become very familiar with advanced microwave measurement equipment, such as:
+<ul>
+<li>
+Powerful amplifiers: from 5 kW CW solid state to 1 MW pulsed klystron
+</li><li>
+Boonton 4542 power meters
+</li><li>
+Agilent E5071C network analyzer
+</li><li>
+Agilent E8663D signal generator
+</li><li>
+Mixers, phase detectors, directional couplers, circulators, etc.
+</li><li>
+SMA, N-type, 7-16 DIN, waveguide connectors
+</li><li>
+Fabricating RF cable connector assemblies, including with Andrew Heliax
+</li>
+</ul>
+</p><p>
+I've learned to use these instruments in both normal and quite unconventional situations.
+</p><p>
+<div><table class="image">
+<tr>
+<!-- <td><a href="images/Portfolio/instrumentracks2b.jpg"><img class="thumbnail" src="images/Portfolio/instrumentracks2b.jpg" alt="Microwave instrument racks" title="Microwave instrument racks"  height="150"/></a></td> -->
+<td><a href="images/Portfolio/amplifier2.jpg"><img class="thumbnail" src="images/Portfolio/amplifier2.jpg" alt="Calibrating directional couplers at the amplifier output" title="Calibrating directional couplers at the amplifier output"  height="100"/></a></td>
+<td><a href="images/Portfolio/BOONTON_4540z.jpg"><img class="thumbnail" src="images/Portfolio/BOONTON_4540_thumb.jpg" alt="Boonton power meter" title="Boonton power meter"  height="100"/></a></td>
+<td><a href="images/Portfolio/siggen2.png"><img class="thumbnail" src="images/Portfolio/siggen2.png" alt="Agilent Sig Gen" title="Agilent Sig Gen"  height="100"/></a></td>
+</tr>
+</table></div> 
+</p>
+    
+<div id="scpi"></div>   
+  <h2>Instrument Communication and Process Automation</h2>
+<p align="justify">
+Early in my time at Cornell, I discovered that I could save a lot of time doing complicated but repetitive measurements by writing a MATLAB (or Labivew, C, etc.) script to communicate with a device that will take the measurement for me. For example, during a cavity test, I'll get the PLL to the peak of the cavity's resonance curve, but then the program will take a reading from the power meters, turn them to pulse mode, turn off the signal generator power, wait for the triggered power meter to record a trace, retrieve that trace, turn them back to modulated mode, record incident power, and do the calculation to convert these measurements to Q and E, and then plot the data in a convenient GUI. When myself and another graduate student wrote this program several years ago, we were able to take data much faster and easier, giving us time to do higher quality tests. I use similar programs to measure T-maps, do DC superheating field measurements, run Nb3Sn coatings, and more.
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/QvsEGUI2.png"><img class="thumbnail" src="images/Portfolio/QvsEGUI2.png" alt="Automated Q vs E Measurement" title="Automated Q vs E Measurement"  height="125"/></td>
+<td><a href="images/Portfolio/matlabcode2.png"><img class="thumbnail" src="images/Portfolio/matlabcode2.png" alt="Matlab instrument communication" title="Matlab instrument communication"  height="125"/></td>
+</tr>
+</table></div> 
+</p>
+
+
+    
+<div id="undergrad"></div>   
+  <h2>Undergraduate Projects</h2>
+<p align="justify">
+I was fortunate to have participated in some exciting projects in my time as an undergraduate, experiences that have certainly been useful to my graduate work. One of the most influential projects that I worked on was calibration of the ATLAS detector in summer 2007. Analyzing cosmic ray events made me realize that I very much enjoyed working on particle accelerators, but that I wanted to be involved in more hands-on areas. In summer 2008, after developing an interest in alternative energy sources, I worked at the Princeton Plasma Physics Lab on a sputter source, a small experiment that gave me the chance to play a significant role in research. Queen's University's excellent engineering physics program also offered me the chance during the school year to work on many projects that I found fantastically exciting, such as using an actual research fMRI to study fluid flows, calculating the stresses on a Boing 747 airplane wing, and designing a neutral beam injector for a tokamak. Notably, in our senior year, a few of my classmates and I spent a year building a small proof-of-concept cycltron.
+</p><p>
+<div><table class="image">
+<tr>
+<td><a href="images/Portfolio/atlas.jpg"><img class="thumbnail" src="images/Portfolio/atlas.jpg" alt="ATLAS LHC detector at CERN" title="ATLAS LHC detector at CERN"  height="125"/></a></td>
+<td><a href="images/Portfolio/SULIpic.jpg"><img class="thumbnail" src="images/Portfolio/SULIpic.jpg" alt="Sputter source at Princeton Plasma Physics Lab" title="Sputter source at Princeton Plasma Physics Lab" height="125"/></a></td>
+<td><a href="images/Portfolio/ATLAScosmic.png"><img class="thumbnail" src="images/Portfolio/ATLAScosmic.png" alt="Cosmic ray event in the ATLAS detector" title="Cosmic ray event in the ATLAS detector"  height="125"/></a></td>
+<td><a href="images/Portfolio/undergrad_cyclotron.png"><img class="thumbnail" src="images/Portfolio/undergrad_cyclotron_thumb.png" alt="Cyclotron project" title="Cyclotron project" height="125"/></a></td>
+</tr>
+</table></div> 
+</p><p>
+Related publications: <a href="http://www.lepp.cornell.edu/~sep93/docs/PosenCAP.pdf">Talk at CAP 2009</a> and <a href="http://cdsweb.cern.ch/record-restricted/1087919">a LHC ATLAS note</a>.   
+</p>
+<!--     
+***SPELL CHECK
+
+
+
+
+
+
+  
+    
+  
+  
+  Undergrad Projects with Pictures - especially Tc system, include output picture
+slow cool system, include output picture
+cavity test record
+Nb3Sn - entire section, including control/measurement system, furnace pictures, cavity pictures, sample pictures
+Tmap, include output picture
+ANSYS - df/dp, LFD
+Cavity string assembly
+Microphonics measurement/LLRF
+Optical inspection?
+Instrument communication, process automation
+maybe mention cavity test software?
+Put "see more HERE" links in resume page, put all portfolio in one page, but have links at top to different sections, like wikipedia
+Change CV/Resume to just resume in titles, links, and titlebars
+Put all this in binder
+Random Abilities
+Clean room
+Comfort running liquefier (include in cavity testing?)
+Network analyzer, power meters, sig gen AND connectors (like andrew but also REGULARLY use SMA, N type, 716 DIN)
+
+Undergrad projects
+CERN pictures of data anlaysis - from report
+cyclotron pictures!
+Princeton pictures of some sort...
+
+
+ 
+-->      
+  
+	</div>
+</div>
+</div>
+
+<hr />
+
+<div id="footer">
+<!-- The footer-content div contains the Cornell University copyright -->
+<div id="footer-content">
+	&copy;2014 <a href="http://www.cornell.edu/">Cornell University</a>
+</div>
+</div>
+
+</body>
+</html>

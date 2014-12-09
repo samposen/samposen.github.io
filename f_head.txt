@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+	This document provides the basis of a semantically structured web page 
+	authored in XHTML 1.0 Transitional using established Cornell University
+	naming conventions.
+-->
+
+<head>
+	<title>Cornell University - Nicholas Valles - News</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+<!--
+	All layout and formatting should be controlled through Cascading Stylesheets (CSS).
+	The following link tag should appear in the head of every page in the website. see
+	styles/screen.css.
+-->
+
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/screen.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function sizeTbl(id) {
+  var sec = document.getElementById(id);
+  var state = sec.style.display
+  if (state=='none'){
+    state = 'block'
+  } else {
+    state = 'none'
+  }
+  sec.style.display = state;
+}
+// -->
+</script> 
+
+</head>
+
+<body class="onecolumn">
+
+<!--
+	The following link provides a way for people using text-based browsers and
+	screen readers to skip over repetitive navigation elements so that they can 
+	get directly to the content. It is hidden from general users through CSS.
+-->
+<div id="skipnav">
+	<a href="#content">Skip to main content</a>
+</div>
+
+<hr />
+
+<!-- The following div contains the Cornell University logo with unit signature -->
+<SCRIPT LANGUAGE="JavaScript" SRC="./scripts/cuid.js"></SCRIPT>
+
+<!-- The header div contains the main identity and main navigation for the site -->
+<div id="header">	
+	<!--
+		The navigation div contains the site's main navigation. These
+		links will be displayed in a horizontal, gray navigation bar 
+		under the unit signature banner.
+	-->	
+	<SCRIPT LANGUAGE="JavaScript" SRC="./scripts/nav.js"></SCRIPT>
+	
+	<hr />
+	
+	<!-- 
+		The identity div contains the name of a main site section
+	-->
+	<div id="identity">
+		<h1>Foosball Scores</h1>
+	</div>
+
+</div>
+
+<hr />
+
+<div id="wrap">
+
+<!-- The content div contains the main content of the page -->
+<div id="content">
+	<div id="main">
+		<h2>The SRF Group's Foosball Score Archive</h2>
+		<p>As the ancient proverb goes, all work and no play make Jack a dull boy. The same is true for those of us working in the SRF group. During lunch, there is a clash of titans in the lunch room of Newman lab, where battle lines are drawn and the men are seperated from the boys.
+		</p>
