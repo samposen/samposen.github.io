@@ -1,11 +1,18 @@
 /* A Free Design by Bryant Smith (bryantsmith.com) */
 
 body {
-  padding:50px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:300;
+	color: #000000;
+	background: #FFFFFF;
 }
-
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
  
  
  html, body {
