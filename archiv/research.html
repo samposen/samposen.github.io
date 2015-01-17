@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+	This document provides the basis of a semantically structured web page 
+	authored in XHTML 1.0 Transitional using established Cornell University
+	naming conventions.
+-->
+
+<head>
+	<title>Cornell University Department of Physics - Nicholas Valles</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+<!--
+	All layout and formatting should be controlled through Cascading Stylesheets (CSS).
+	The following link tag should appear in the head of every page in the website. see
+	styles/screen.css.
+-->
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/screen.css" />
+</head>
+
+<body class="bridge">
+
+<!--
+	The following link provides a way for people using text-based browsers and
+	screen readers to skip over repetitive navigation elements so that they can 
+	get directly to the content. It is hidden from general users through CSS.
+-->
+<div id="skipnav">
+	<a href="#content">Skip to main content</a>
+</div>
+
+<hr />
+
+<!-- The following div contains the Cornell University logo with unit signature -->
+<div id="cu-identity">
+	<div id="cu-logo">
+		<a id="insignia-link" href="http://www.cornell.edu/"><img src="images/unit_signature_unstyled.gif" alt="Cornell University" width="283" height="75" border="0" /></a>
+		<div id="unit-signature-links">
+			<a id="cornell-link" href="http://www.cornell.edu/">Cornell University</a>
+			<a id="unit-link" href="UNIT URL GOES HERE">Unit Name</a>
+		</div>
+	</div>
+	
+	<!-- 
+		The search-form div contains a form that allows the user to search 
+		either pages or people within cornell.edu directly from the banner.
+	-->
+	<div id="search-form">
+		<form action="http://www.cornell.edu/search/" method="get" enctype="application/x-www-form-urlencoded">
+			<div id="search-input">
+				<label for="search-form-query">SEARCH CORNELL:</label>
+				<input type="text" id="search-form-query" name="q" value="" size="20" />
+				<input type="submit" id="search-form-submit" name="submit" value="go" />
+			</div>
+
+			<div id="search-filters">
+					<input type="radio" id="search-filters1" name="tab" value="" checked="checked" />
+					<label for="search-filters1">Pages</label>
+				
+					<input type="radio" id="search-filters2" name="tab" value="people" />
+					<label for="search-filters2">People</label>
+					
+					<a href="http://www.cornell.edu/search/">more options</a>
+			</div>	
+		</form>
+	</div>
+	
+	<!-- 
+		The search-form div contains a form that allows the user to search 
+		either the unit website or all of cornell.edu directly from the banner.
+	<div id="search-form">
+		<form action="#" method="post" enctype="application/x-www-form-urlencoded">
+			<div id="search-input">
+				<label for="search-form-query">SEARCH:</label>
+				<input type="text" id="search-form-query" name="query" value="" size="20" />
+				<input type="submit" id="search-form-submit" name="submit" value="go" />
+			</div>
+
+			<div id="search-filters">
+					<input type="radio" id="search-filters1" name="target" value="unit" checked="checked" />
+					<label for="search-filters1">Unit name</label>
+				
+					<input type="radio" id="search-filters2" name="target" value="cornell" />
+					<label for="search-filters2">Cornell</label>
+					
+					<a href="#">more options</a>
+			</div>	
+		</form>
+	</div>
+	-->
+	
+	<!--
+		The search-navigation div contains links that allow the user to search
+		either the unit website or all of cornell.edu.
+		These links will be displayed in the unit signature banner and will
+		be aligned with the right edge of the page.
+	<div id="search-navigation">
+		<ul>
+			<li><a href="#">Search Unit Name</a></li>
+			<li><a href="http://www.cornell.edu/search/">Search Cornell</a></li>
+		</ul>
+	</div>
+	-->
+</div>
+
+<!-- The header div contains the main identity and main navigation for the site -->
+<div id="header">	
+	<!--
+		The navigation div contains the site's main navigation. These
+		links will be displayed in a horizontal, gray navigation bar 
+		under the unit signature banner.
+	-->	
+		<SCRIPT LANGUAGE="JavaScript" SRC="./scripts/nav.js"></SCRIPT>
+	
+	<hr />
+	
+	<hr />
+	
+	<!-- 
+		The identity div contains the name of a main site section
+	-->
+	<div id="identity">
+		<h1>Accelerator Physics Research in the SRF group at Cornell</h1>
+	</div>
+</div>
+
+<hr />
+
+<div id="wrap">
+
+<!-- The content div contains the main content of the page -->
+<div id="content">
+	<div id="main">
+		<!--
+			The pullquote blockquote is displayed in bold at the top right
+			corner of the page. It should contain a brief (one or two sentences) 
+			statement that captures the nature of the contents of the bridge page.
+			
+			Note that the text does not necessarily need to be an actual quotation,
+			in which case the caption div should be omitted.
+		-->
+		<blockquote class="pullquote">
+			<p>
+			The cure for boredom is curiosity. There is no cure for curiosity.
+			</p>
+			<div class="caption">
+			- Dorothy Parker
+			</div>
+		</blockquote>
+		
+		<!--
+			The following paragraph(s) will appear to the left of the pullquote.
+			The paragraph(s) should describe or introduce the contents of the 
+			bridge page.
+		-->
+		<p>
+		This is my third year working with the Superconducting Radio Frequency group at Cornell. My research can be broken down broadly into two categories.
+		</p><p>
+		The first project I have been working on is cavity design for the main linac of Cornell's energy recovery linac. Check here to see how an energy recovery linac works. It is a design project that relies on sophisticated computer codes, and extensive use of parallel computing to obtain a state of the art cavity. For more information on this project, check out the links below.
+		</p><p>
+		Secondly, I have been doing material science studies on Niobium. Niobium is an element that has superconducting properties at low temperature (below 9.2K), and is used to construct superconducting cavities. I am interested in determining the fundamental limits of this material, which is necessary to design the next generation of accelerators capable of higher acclerating gradients.
+		</p><p>
+		For more information, please see <a href="papers.html">the full list of research papers and presentations</a></p>
+		
+		<!-- 
+			A bridge-group1 div will appear as a left column element on the 
+			bridge page. The bridge page can contain any number of bridge-group1
+			divs, which will stack independently of right column content.
+		-->		
+		<div class="bridge-group1">
+			<h2>Cavity Design</h2>
+			<img class="bridge-photo" src="images/science/CERL7cell.png" alt="CAD model of Cornell's 7-cell cavity" />
+			<p class="caption">Computer model of Cornell's 7-Cell cavity. The coloring corresponds to the intensity of the surface electric fields.</p>
+			<p> Cornell's energy recovery linac project seeks to generate a very high quality x-ray source with a very high repetition rate. Uses of this technology range from imaging protiens to capturing how chemical reactions take place.</p>
+			<p> The x-rays are created by bending a high energy beam of electrons that run through a track under Cornell's campus. To obtain an electron beam with the required properties, we need a cavity design that can support high currents and not spoil the beam with undesired electro-magnetic fields.</p>
+			<p>We use computer clusters to optimize the cavity parameters. The computers must generate cavity geometries and then use EM solvers to compute the fields inside the cavity. Since these calculations can take a long time, parallel computing is a necessity.</p>
+			<p>The simulation portion of the baseline design is completed and we are currently in the prototyping phase of the cavity design project.</p>
+<!--
+			<dl>
+				<dt><a href="#">Vestibulum ornare bibendum urna</a></dt>
+				<dd>
+				Mei labores partiendo in. Feugait verterem mediocrem est ei, ius diceret docendi expetendis ne.
+				</dd>
+				<dt><a href="#">Maecenas cursus purus a risus</a></dt>
+				<dd>
+				At per primis consequuntur, eu nec saepe nostro apeirian, vidisse deserunt splendide ad mea.
+				</dd>
+				<dt><a href="#">Donec vitae elit at nunc tempor varius</a></dt>
+				<dd>
+				Ad vel illud debet. Ex adipisci consectetuer mei, timeam aliquyam eu eum, mundi officiis ei sea.
+				</dd>
+			</dl>
+-->
+		</div>
+		
+		<!-- 
+			A bridge-group2 div will appear as a right column element on the 
+			bridge pgae. The bridge page can contain any number of bridge-group2
+			divs, which will stack independently of left column content.
+		-->
+		<div class="bridge-group2">
+			<h2>Material Studies</h2>
+			<img class="bridge-photo" src="images/science/cavThumb.jpg" alt="Experimental Setup for Material Measurement" />
+			<p class="caption">Experimental setup used to measure the superheating field of niobium.</p>
+			<p>Niobium is a material that has a superconducting state at temperatures below 9.2K. In the superconducting state, the metal looses all resistance to direct currents, and almost all resistance to alternating currents.</p>
+			<p> The superheating phase can be disrupted by raising the metal temperature too high, as well as keeping the temperature low, and having too large of a magnetic field on the surface. It is possible however, to have a "supersaturated" state, where this limit is metastably surpassed. This is called the superheating field, and is the purpose of much of my study.</p>
+			<p>Precise knowledge of the superheating field can help next generation particle accelerators, such as the ILC, push their designs to the fundamental physical limits.</p>
+			<h3>Papers on the Superheating Field of Niobium</h3>
+			<ul class="bridge-links">
+				<li><a href="http://arxiv.org/abs/1002.3182">Temperature Dependence of the Superheating Field in Niobium</a></li>
+<!--			
+				<li><a href="#">Aenean fringilla velit at dolor.</a></li>
+				<li><a href="#">Cras convallis neque non nulla.</a></li>
+				<li><a href="#">Morbi adipiscing interdum ante.</a></li>
+				<li><a href="#">Maecenas iaculis est auctor pede.</a></li>
+				<li><a href="#">Ut blandit mi ac velit.</a></li>
+				<li><a href="#">Nullam non ante id nunc bibendum fermentum.</a></li>
+				<li><a href="#">Praesent vestibulum augue ut turpis.</a></li>
+-->
+			</ul>
+		</div>
+		
+		<!--
+			A bridge-section div will appear as an element that spans the entire
+			width of the page, clearing any left or right columns that appear above.
+			The bridge page can contain any number of bridge-section divs.
+			
+			Note that the bridge-section div can contain bridge-group1 and 
+			bridge-group2 divs, as in the example below. 
+		-->
+		<div class="bridge-section">
+			<h2>Recent Developments</h2>
+			
+			<div class="bridge-group1">
+				<img class="bridge-photo" src="images/photos/law.jpg"/>
+			</div>
+			
+			<div class="bridge-group2">
+				<h3>Latest Conference Participation</h3>
+				<p>
+				Cornell University hosted a conference on higher-order mode absorbers for particle accelerators, <a href="http://www.lns.cornell.edu/Events/HOM10/WebHome.html">HOM 10</a>. I presented a talk on determining the best region of dielectric constants for beam line absorbing material made of carbon nano tubes. 
+				</p>
+				<ul>
+					<li><a href="http://www.lns.cornell.edu/Events/HOM10/rsrc/LEPP/Events/HOM10/Agenda/TP2_Valles.pdf">Absorbing Materials for Beamline Absorbers:<br/>How Good is Good Enough?</a> (PDF, 1.0 MB)</li>
+				</ul>
+				<h3>Latest Publication</h3>
+				<p>
+				At the most recent Linac Conference, we presented work on the baseline cavity design for Cornell's ERL. The paper and poster presented are available below:
+				</p>
+				<ul>
+				<li><a href="Papers/LINAC10/LINAC10poster.pdf">Poster - Optimization Methods and Results</a><br/>(PDF, 805 KB)</li>
+					<li><a href="#">Paper - Baseline Cavity Optimization for Cornell's ERL</a> [Available when proceedings of LINAC 2010 go online]</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<hr />
+
+<div id="footer">
+<!-- The footer-content div contains the Cornell University copyright -->
+<div id="footer-content">
+	&copy;2005 <a href="http://www.cornell.edu/">Cornell University</a>
+</div>
+</div>
+
+</body>
+</html>
