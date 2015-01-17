@@ -1,0 +1,20 @@
+/COM,ANSYS RELEASE 13.0    UP20101012       09:35:09    04/10/2014
+
+ *** ERROR ***                           CP =       1.248   TIME= 09:35:12
+ Data file \\samba\home\sep93\public_html\images\misc\Thumbs.db has      
+ incorrect format, is missing READ/WRITE permission, or is empty for     
+ RESUME.                                                                 
+
+ *** WARNING ***                         CP =       1.248   TIME= 09:35:12
+ WHILE PROCESSING FILE BASED INPUT (/INPUT OR MACRO) AN ERROR HAS        
+ OCCURRED.  SHOULD INPUT PROCESSING BE SUSPENDED?                        
+
+ *** ERROR ***                           CP =       1.248   TIME= 09:35:20
+ An unexpected error ( SIG$BREAK ) has occurred...  ANSYS internal data  
+ has been corrupted.  ANSYS is unable to recover and will terminate.     
+                                                                         
+  Previously saved files are unaffected.                                 
+
+ *** WARNING ***                         CP =       1.248   TIME= 09:35:20
+ WHILE PROCESSING FILE BASED INPUT (/INPUT OR MACRO) AN ERROR HAS        
+ OCCURRED.  SHOULD INPUT PROCESSING BE SUSPENDED?                        
